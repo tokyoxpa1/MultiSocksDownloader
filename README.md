@@ -26,14 +26,7 @@ MultiSocksDownloader是一個基於Python開發的多代理下載工具，可以
   - requests：HTTP請求
   - PySocks：SOCKS代理支持
 
-## 安裝方法
-
-### 方法一：使用執行檔（Windows用戶）
-
-1. 從release頁面下載 `MultiSocksDownloader.exe`
-2. 雙擊執行程式
-
-### 方法二：從原始碼執行
+### 從原始碼執行
 
 1. 克隆或下載本專案
 2. 安裝依賴套件：
