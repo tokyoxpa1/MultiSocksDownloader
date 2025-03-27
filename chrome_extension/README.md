@@ -22,30 +22,6 @@
 
 #### 從 Chrome 網上應用店安裝（普通用戶使用）
 
-*待上架後補充*
-
-### 2. 安裝 Native Messaging 主機
-
-Native Messaging 主機用於在 Chrome 擴展程式和多代理下載器應用程式之間建立直接通信。
-
-#### Windows
-
-1. 確保已安裝 Python 3.6 或更高版本
-2. 打開命令提示符，進入 `chrome_extension` 目錄
-3. 運行安裝腳本，替換 `YOUR_EXTENSION_ID` 為實際的擴展程式 ID：
-
-```
-python install_host.py --extension-id YOUR_EXTENSION_ID
-```
-
-#### 卸載 Native Messaging 主機
-
-如果需要卸載 Native Messaging 主機，可以運行：
-
-```
-python install_host.py --uninstall
-```
-
 ## 使用方法
 
 ### 1. 啟動多代理下載器應用程式
@@ -79,8 +55,7 @@ python install_host.py --uninstall
 
 1. 確保多代理下載器應用程式已啟動
 2. 檢查應用程式伺服器地址是否正確（預設為 `http://localhost:8765`）
-3. 檢查是否正確安裝了 Native Messaging 主機
-4. 查看 Native Messaging 主機日誌（位於 `%TEMP%/multisocks_native_host.log`）
+
 
 ### 下載未被攔截
 
@@ -91,7 +66,6 @@ python install_host.py --uninstall
 ## 開發者信息
 
 - 擴展程式使用 Manifest V3 開發
-- 通信方式：優先使用 Native Messaging，失敗時回退到 HTTP 請求
 - 擴展程式需要以下權限：
   - `downloads`：用於攔截下載事件
   - `contextMenus`：用於添加右鍵選單
