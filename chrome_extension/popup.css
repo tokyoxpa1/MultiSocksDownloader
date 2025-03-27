@@ -1,0 +1,189 @@
+/* 下載列表容器 */
+#downloadsContainer {
+  margin-top: 15px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+#downloadsContainer h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+#noDownloads {
+  color: #666;
+  font-style: italic;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* 下載項目樣式 */
+.download-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.download-item .filename {
+  font-weight: bold;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 350px;
+}
+
+.progress-container {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4285f4;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+/* 按鈕樣式 */
+.controls button {
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.controls button.pause {
+  color: #1a73e8;
+}
+
+.controls button.resume {
+  color: #1e8e3e;
+}
+
+.controls button.cancel {
+  color: #d93025;
+}
+
+.controls button:hover {
+  background-color: #f5f5f5;
+}
+
+/* 連接狀態樣式 */
+#connectionStatus {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+/* 已保存下載容器 */
+#savedDownloadsContainer {
+  margin-top: 15px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.saved-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.saved-header h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+#noSavedDownloads {
+  color: #666;
+  font-style: italic;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* 已保存下載項目樣式 */
+.saved-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f0f4ff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.saved-item .filename {
+  font-weight: bold;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 350px;
+}
+
+.saved-item .date {
+  font-size: 11px;
+  color: #666;
+}
+
+.saved-item .progress-bar {
+  background-color: #ffc107; /* 使用黃色來區分保存的和活躍的下載 */
+}
+
+/* 小按鈕樣式 */
+.small-button {
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.small-button:hover {
+  background-color: #e9ecef;
+}
+
+/* 恢復按鈕樣式 */
+button.resume-saved {
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  background-color: #e8f0fe;
+  color: #1a73e8;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button.resume-saved:hover {
+  background-color: #d2e3fc;
+} 
