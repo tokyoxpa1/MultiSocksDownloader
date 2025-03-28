@@ -135,4 +135,3 @@ A: 不會。程式會自動保存下載進度，重新啟動後可以繼續未�
 
 本專案的部分設計參考了以下開源項目：
 - [Motrix](https://github.com/agalwood/Motrix)：多線程下載管理器
-- [PyIDM](https://github.com/pyidm/PyIDM)：Python實現的下載管理器 
