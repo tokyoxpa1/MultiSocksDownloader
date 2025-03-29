@@ -41,21 +41,12 @@ pip install -r requirements.txt
 python MultiSocksDownloader.py
 ```
 
-### Chrome擴充功能安裝（可選）
+### Chrome擴充功能安裝
 
-1. 安裝Chrome瀏覽器擴充功能：
+安裝Chrome瀏覽器擴充功能：
    - 開啟Chrome擴充功能頁面：`chrome://extensions/`
    - 開啟右上角的「開發者模式」
    - 點擊「載入未封裝項目」，選擇 `chrome_extension` 目錄
-
-2. 安裝Native Messaging主機：
-   - 確保已安裝Python 3.6或更高版本
-   - 進入 `chrome_extension` 目錄
-   - 執行安裝腳本，替換 `YOUR_EXTENSION_ID` 為實際的擴充功能ID：
-
-   ```
-   python install_host.py --extension-id YOUR_EXTENSION_ID
-   ```
 
 ## 使用說明
 
